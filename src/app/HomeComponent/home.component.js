@@ -44,11 +44,11 @@ export default function HomePage() {
 							<div className="bio">
 					
 								<p> 
-									Hey there, I'm Anthony Ivery, a seasoned Software Developer who's all about leveling up my skills and staying on top of the latest tech and frameworks. I thrive in team settings,
-								 where I love learning from veterans and helping out newer devs. Seeing others succeed in what they love is my jam, and I'm known for being a great communicator.
+									Hey there, I{"'"}m Anthony Ivery, a seasoned Software Developer who{"'"}s all about leveling up my skills and staying on top of the latest tech and frameworks. I thrive in team settings,
+								 where I love learning from veterans and helping out newer devs. Seeing others succeed in what they love is my jam, and I{"'"}m known for being a great communicator.
 								 </p>
 								 <p>
-									Quick backstory: I'm originally from Dayton, OH—a place where making something out of nothing is a real challenge. I spent four years in the US Army, where I learned tons about life and leadership. After that, 
+									Quick backstory: I{"'"}m originally from Dayton, OH—a place where making something out of nothing is a real challenge. I spent four years in the US Army, where I learned tons about life and leadership. After that, 
 									I did construction work for a bit, then got into HVAC, fixing things for Sears customers.
 									But I wanted more, so I hit the books again and got my BS in Information Technology, focusing on Web Development. Best decision ever—coding is my passion now!
 								</p>
