@@ -1,28 +1,21 @@
-@import '../scss/breakpoints';
+@import '/src/app/scss/breakpoints';
 
 header {
 	display: flex;
 	background: #212121;
-	margin-bottom: 4rem;
 	color: white;
 	font-family: SF Pro Display,sans-serif;
 
 	.nav-bar {
 		opacity: 1;
-		position: absolute;
-		top: 0;
-		left: 0;
 		width: 100%;
-		z-index: 900;
+		z-index: 9;
 
 		#navbar-content {
 			display: flex;
 			flex-direction: row-reverse;
 
 			.navbar-nav {
-				align-items: center;
-				margin-left: 50%;
-				height: auto;
 				display: flex;
 
 				.nav-item {
@@ -48,46 +41,17 @@ header {
 			}
 		}
 	}
-
-	.header-content {
-		.header-content-hero {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
-
-			.header-content-text-wrapper {
-				margin: auto;
-
-				.waving {
-					height: 50px;
-					width: 50px;
-				}
-
-				.hi {
-					text-transform: uppercase;
-					display: flex;
-					align-items: center;
-				}
-			
-				h3 {
-					color:#29FAF8 ;
-				}
-			}
-		}
-	}
 }
-
 @media screen and (min-width: $desktop-min-width) {
 	header {
-		padding: 5rem;
+		height: 5rem;
+		align-items: center;
 
 		.navbar__toggle{
 			display: none;
 		}
 
 		.navbar-nav {
-			height: 5rem;
 			margin: 2rem 0;
 		}
 

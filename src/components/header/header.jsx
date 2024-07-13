@@ -1,19 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client"
 import Image from 'next/image';
-import { createRef, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { IconContext } from 'react-icons';
 import { IoMdClose } from 'react-icons/io';
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import meEmogi from '/public/assets/img/IMG_BE9C1F1543F3-1.png';
-import wavingEmogi from '/public/assets/img/Waving Hand Emoji [Free Download IOS Emojis].png'
-
-import '../core/header.component.scss'
+import '../header/header.scss'
+import Link from 'next/link';
 
 export default function Header() {
 	const mobileMenuRef = useRef(null);
-	const menuLinksRef = useRef(null);
 	var [mobileMenuActive, setMobileMenuActive] = useState(false);
 
 	const mobileMenuToggle = () => {
@@ -56,7 +53,7 @@ export default function Header() {
 					<div id="navbar-content" >
 						<ul className={"navbar-nav" + (mobileMenuActive ? ' active' : '')}>
 							<li className="nav-item">
-								<a className="nav-link" id="home-section" href="#">Home</a>
+								<Link className="nav-link" id="home-section" href="/home">Home</Link>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" id="bio-section" href="#about-me">Bio</a>
@@ -65,7 +62,7 @@ export default function Header() {
 								<a className="nav-link" id="services-section" href="#my-services">Services</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" id="portfolio-section" href="#portfolio">Projects</a>
+								<Link className="nav-link" id="portfolio-section" href="/projects">Projects</Link>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#contact" id="contact-section">Contact</a>
@@ -77,24 +74,6 @@ export default function Header() {
 					</div>
 				</div>
 				</nav>
-		
-			<div className="header-content">
-				<div className="header-content-hero">
-					<div className="header-content-text-wrapper">
-						<p className="hi">
-							Hi there <Image className="waving" width={50} height={50} src={wavingEmogi} alt="" /> I{"'"}m
-						</p>
-						<h1 className='my-name'>Anthony Ivery</h1>
-						<h3>
-							Front-end Web Developer
-						</h3>
-						<p className="intro">
-							I am a veteran and Professional Web developer<br/>
-						</p>
-						<Image src={meEmogi} alt="" className="me"/>
-					</div>
-				</div>
-			</div>
 		</header>
 	</>
 	)
