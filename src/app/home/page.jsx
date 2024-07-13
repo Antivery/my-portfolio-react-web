@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 
-import '../HomeComponent/home.component.scss';
+import './page.scss';
 
 import imageOfMe from '/public/assets/img/C071F348-ECE1-4795-A948-B2F9BAD84E89.JPG';
 import webDevIcon from '/public/assets/img/web-development.png';
@@ -12,12 +12,11 @@ import drawing from '/public/assets/img/drawing.png';
 import wireFrame from '/public/assets/img/wireframe.png';
 import codingLang from '/public/assets/img/coding-language.png';
 import callBlack from '/public/assets/img/call(1).png';
-import callBlue from '/public/assets/img/call.png';
 import email from '/public/assets/img/email.png';
 import location from '/public/assets/img/location.png';
 import dynamic from 'next/dynamic';
-import { useEffect, useState } from 'react';
-import {breakPoints} from '../scss/_breakpoints.scss'
+import meEmogi from '/public/assets/img/IMG_BE9C1F1543F3-1.png';
+import wavingEmogi from '/public/assets/img/Waving Hand Emoji [Free Download IOS Emojis].png'
 
 const PDFViewerComponent = dynamic(() => import('../utilities/PDFViewer'), { ssr: false });
 
@@ -25,7 +24,24 @@ export default function HomePage() {
 	  
 	return (
 		<>
-			<main>
+			<main>		
+			<div className="header-content">
+				<div className="header-content-hero">
+					<div className="header-content-text-wrapper">
+						<p className="hi">
+							Hi there <Image className="waving" width={50} height={50} src={wavingEmogi} alt="" /> I{"'"}m
+						</p>
+						<h1 className='my-name'>Anthony Ivery</h1>
+						<h3>
+							Front-end Web Developer
+						</h3>
+						<p className="intro">
+							I am a veteran and Professional Web developer<br/>
+						</p>
+						<Image src={meEmogi} alt="" className="me"/>
+					</div>
+				</div>
+			</div>
 				<section id="about-me" className="container"> 
 					<div className="who-I-am">
 						<p>Who I Am</p>
