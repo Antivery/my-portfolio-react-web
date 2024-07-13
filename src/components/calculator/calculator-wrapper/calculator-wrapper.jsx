@@ -1,12 +1,11 @@
 import './calculator-wrapper.scss'
-import { Textfit } from 'react-textfit';
 
 
 export const Screen = ({ value }) => {
     return(
-        <Textfit className='ap-calc-screen'>
+        <div className='ap-calc-screen'>
             {value}
-        </Textfit>
+        </div>
     )
 }
 
